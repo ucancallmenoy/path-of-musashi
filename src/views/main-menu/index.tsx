@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/8bit/dialog";
 import { Separator } from "@/components/ui/8bit/separator";
 import { hasSave } from "@/lib/storage";
+import { useBgm } from "@/hooks/use-bgm";
 
 const menuItems = [
   { label: "New Game", id: "new-game" },
@@ -32,6 +33,8 @@ export default function MainMenu() {
     return () => clearTimeout(timer);
   }, []);
 
+  const { volume, setVolume, enabled, setEnabled } = useBgm("/assets/bg-music/main-menu.mp3");
+
   const handleMenuClick = (id: string) => {
     if (id === "settings") {
       setSettingsOpen(true);
@@ -45,17 +48,19 @@ export default function MainMenu() {
   };
 
   return (
-    <div className="relative h-dvh w-full bg-gradient-to-b from-retro-bg-dark to-[#050508] flex flex-col items-center justify-center overflow-hidden select-none">
+    <div className="relative h-dvh w-full bg-[url('/assets/backgrounds/main-menu.png')] bg-cover bg-center bg-no-repeat pixelated flex flex-col items-center justify-center overflow-hidden select-none">
 
-      <div className="absolute bottom-4 left-4 text-[10px] text-retro-beige/40 retro">
+      <div className="absolute inset-0 bg-gradient-to-b from-retro-bg-dark/70 to-[#050508]/80" />
+
+      <div className="absolute bottom-4 left-4 text-[10px] text-retro-beige/40 retro z-10">
         v0.1.0
       </div>
 
-      <div className="absolute bottom-4 right-4 text-[10px] text-retro-beige/40 retro">
+      <div className="absolute bottom-4 right-4 text-[10px] text-retro-beige/40 retro z-10">
         © 2026 Path of Musashi
       </div>
 
-      <div className="flex flex-col items-center gap-16 px-4">
+      <div className="relative z-10 flex flex-col items-center gap-16 px-4">
         <div className="flex flex-col items-center gap-4">
           <h1 className="retro text-2xl sm:text-3xl md:text-4xl text-retro-beige text-center leading-relaxed tracking-[0.15em]">
             PATH OF<br />MUSASHI
@@ -100,7 +105,8 @@ export default function MainMenu() {
                 {[1, 2, 3, 4, 5].map((bar) => (
                   <div
                     key={bar}
-                    className="w-1.5 h-4 bg-retro-gold/70"
+                    className={`w-1.5 h-4 cursor-pointer transition-colors ${bar / 5 <= volume ? "bg-retro-gold" : "bg-retro-gold/20"}`}
+                    onClick={() => setVolume(bar / 5)}
                   />
                 ))}
               </div>
@@ -113,7 +119,12 @@ export default function MainMenu() {
             <Separator />
             <div className="flex items-center justify-between">
               <span className="retro text-[10px] text-retro-beige">BGM</span>
-              <span className="retro text-[10px] text-retro-gold">ON</span>
+              <span
+                className={`retro text-[10px] cursor-pointer transition-colors ${enabled ? "text-retro-gold" : "text-retro-beige/40"}`}
+                onClick={() => setEnabled(!enabled)}
+              >
+                {enabled ? "ON" : "OFF"}
+              </span>
             </div>
           </div>
           <Button

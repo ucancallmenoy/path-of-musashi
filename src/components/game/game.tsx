@@ -6,6 +6,11 @@ import type { Chapter as ChapterType } from "@/types/game"
 import { Chapter } from "./chapter"
 import { getChapter } from "@/lib/game"
 import { loadGame } from "@/lib/storage"
+import { useBgm } from "@/hooks/use-bgm"
+
+const chapterBgm: Record<string, string> = {
+  prologue: "/assets/bg-music/prologue.mp3",
+}
 
 interface GameProps {
   chapterId?: string
@@ -18,6 +23,10 @@ export function Game({ chapterId, resume }: GameProps) {
   const [chapter, setChapter] = useState<ChapterType | null>(null)
   const [initialScene, setInitialScene] = useState<string | undefined>()
   const [initialDialogueIndex, setInitialDialogueIndex] = useState<number | undefined>()
+
+  const currentChapterId = chapter?.id
+  const bgmTrack = currentChapterId ? chapterBgm[currentChapterId] : undefined
+  useBgm(bgmTrack)
 
   useEffect(() => {
     const timer = setTimeout(() => {
