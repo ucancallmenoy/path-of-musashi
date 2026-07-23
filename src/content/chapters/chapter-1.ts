@@ -14,11 +14,13 @@ export const chapter1: Chapter = {
     {
       id: "morning-reveal",
       background: "/assets/backgrounds/prologue.png",
+      bgm: "/assets/bg-music/morning.mp3",
     },
 
     {
       id: "morning-village",
       background: "/assets/backgrounds/prologue.png",
+      bgm: "/assets/bg-music/morning.mp3",
       characters: [
         {
           character: "miyamoto",
@@ -72,11 +74,13 @@ export const chapter1: Chapter = {
     {
       id: "training-clearing",
       background: "/assets/backgrounds/prologue.png",
+      bgm: "/assets/bg-music/morning.mp3",
     },
 
     {
       id: "morning-training",
       background: "/assets/backgrounds/prologue.png",
+      bgm: "/assets/bg-music/morning.mp3",
       characters: [
         {
           character: "miyamoto",
@@ -130,11 +134,13 @@ export const chapter1: Chapter = {
     {
       id: "village-road-reveal",
       background: "/assets/backgrounds/village-road.png",
+      bgm: "/assets/bg-music/village.mp3",
     },
 
     {
       id: "matahachi-meeting",
       background: "/assets/backgrounds/village-road.png",
+      bgm: "/assets/bg-music/village.mp3",
       characters: [
         {
           character: "miyamoto",
@@ -232,11 +238,13 @@ export const chapter1: Chapter = {
     {
       id: "shrine-reveal",
       background: "/assets/backgrounds/shrine.png",
+      bgm: "/assets/bg-music/shrine.mp3",
     },
 
     {
       id: "otsu-meeting",
       background: "/assets/backgrounds/shrine.png",
+      bgm: "/assets/bg-music/shrine.mp3",
       characters: [
         {
           character: "otsu",
@@ -342,11 +350,13 @@ export const chapter1: Chapter = {
     {
       id: "dojo-reveal",
       background: "/assets/backgrounds/dojo.png",
+      bgm: "/assets/bg-music/dojo.mp3",
     },
 
     {
       id: "dojo-scene",
       background: "/assets/backgrounds/dojo.png",
+      bgm: "/assets/bg-music/dojo.mp3",
       characters: [
         {
           character: "dojo-master",
@@ -456,11 +466,13 @@ export const chapter1: Chapter = {
     {
       id: "village-square-reveal",
       background: "/assets/backgrounds/village-square.png",
+      bgm: "/assets/bg-music/elder.mp3",
     },
 
     {
       id: "elder-conversation",
       background: "/assets/backgrounds/village-square.png",
+      bgm: "/assets/bg-music/elder.mp3",
       characters: [
         {
           character: "elder",
@@ -554,11 +566,13 @@ export const chapter1: Chapter = {
     {
       id: "village-exit-reveal",
       background: "/assets/backgrounds/village-exit.png",
+      bgm: "/assets/bg-music/departure.mp3",
     },
 
     {
       id: "departure-goodbye",
       background: "/assets/backgrounds/village-exit.png",
+      bgm: "/assets/bg-music/departure.mp3",
       characters: [
         {
           character: "matahachi",
@@ -664,6 +678,7 @@ export const chapter1: Chapter = {
     {
       id: "departure-walk",
       background: "/assets/backgrounds/village-exit.png",
+      bgm: "/assets/bg-music/departure.mp3",
       dialogue: [
         {
           speaker: "",

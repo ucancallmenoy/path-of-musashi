@@ -16,6 +16,7 @@ export interface CharacterEntry {
 export interface Scene {
   id: string
   background?: string
+  bgm?: string
   characters?: CharacterEntry[]
   dialogue?: DialogueLine[]
   choices?: Choice[]

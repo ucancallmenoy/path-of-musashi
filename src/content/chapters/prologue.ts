@@ -9,17 +9,20 @@ export const prologue: Chapter = {
       chapterTitle: "PATH OF MUSASHI",
       subtitle: "The Way of the Sword",
       transition: "fadeIn",
+      bgm: "/assets/bg-music/prologue.mp3",
     },
     {
       id: "bg-reveal",
       background: "/assets/backgrounds/prologue.png",
       transition: "fadeIn",
+      bgm: "/assets/bg-music/prologue.mp3",
     },
     {
       id: "character-intro",
       background: "/assets/backgrounds/prologue.png",
       characters: [{ character: "miyamoto", position: "center" }],
       transition: "fadeIn",
+      bgm: "/assets/bg-music/prologue.mp3",
     },
     {
       id: "narration",
@@ -36,6 +39,7 @@ export const prologue: Chapter = {
         { speaker: "", text: "And the road ahead." },
       ],
       transition: "fadeIn",
+      bgm: "/assets/bg-music/prologue.mp3",
     },
     {
       id: "chapter-end",
@@ -43,6 +47,7 @@ export const prologue: Chapter = {
       subtitle: "The Beginning",
       nextScene: "chapter-1",
       transition: "fadeIn",
+      bgm: "/assets/bg-music/prologue.mp3",
     },
   ],
 }

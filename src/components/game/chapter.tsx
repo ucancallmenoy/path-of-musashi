@@ -6,6 +6,7 @@ import { SceneRenderer } from "./scene"
 import { Transition } from "./transition"
 import { ContinueButton } from "./continue-button"
 import { saveGame } from "@/lib/storage"
+import { useBgm } from "@/hooks/use-bgm"
 
 interface ChapterProps {
   chapter: ChapterType
@@ -28,6 +29,7 @@ export function Chapter({ chapter, initialScene, initialDialogueIndex, onComplet
 
   const currentScene = chapter.scenes[currentSceneIndex]
   const isChapterTitleScene = !!currentScene?.chapterTitle && currentSceneIndex === 0
+  useBgm(currentScene?.bgm)
 
   useEffect(() => {
     if (sceneChangeRef.current) {
