@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 import type { Chapter as ChapterType } from "@/types/game"
 import { SceneRenderer } from "./scene"
 import { Transition } from "./transition"
@@ -24,11 +24,17 @@ export function Chapter({ chapter, initialScene, initialDialogueIndex, onComplet
   })
   const [transitionVisible, setTransitionVisible] = useState(true)
   const [showChapterEnd, setShowChapterEnd] = useState(false)
+  const sceneChangeRef = useRef(false)
 
   const currentScene = chapter.scenes[currentSceneIndex]
   const isChapterTitleScene = !!currentScene?.chapterTitle && currentSceneIndex === 0
 
   useEffect(() => {
+    if (sceneChangeRef.current) {
+      sceneChangeRef.current = false
+      setTimeout(() => setTransitionVisible(false), 50)
+      return
+    }
     if (isChapterTitleScene) {
       const timer = setTimeout(() => {
         setTransitionVisible(false)
@@ -64,7 +70,11 @@ export function Chapter({ chapter, initialScene, initialDialogueIndex, onComplet
       if (nextScene?.chapterTitle && nextIndex === chapter.scenes.length - 1) {
         setShowChapterEnd(true)
       } else {
-        setCurrentSceneIndex(nextIndex)
+        sceneChangeRef.current = true
+        setTransitionVisible(true)
+        setTimeout(() => {
+          setCurrentSceneIndex(nextIndex)
+        }, 600)
       }
     } else {
       onComplete()
@@ -103,9 +113,9 @@ export function Chapter({ chapter, initialScene, initialDialogueIndex, onComplet
 
   return (
     <div className="relative h-dvh w-full overflow-hidden bg-black">
-      {isChapterTitleScene && currentScene && (
-        <Transition visible={transitionVisible}>
-          {currentScene.subtitle ? (
+      <Transition visible={transitionVisible}>
+        {isChapterTitleScene && currentScene && (
+          currentScene.subtitle ? (
             <div className="flex flex-col items-center gap-4">
               <h1 className="retro text-2xl sm:text-3xl md:text-4xl text-retro-beige tracking-[0.15em] text-center leading-relaxed">
                 {currentScene.chapterTitle}
@@ -116,9 +126,9 @@ export function Chapter({ chapter, initialScene, initialDialogueIndex, onComplet
             </div>
           ) : (
             currentScene.chapterTitle
-          )}
-        </Transition>
-      )}
+          )
+        )}
+      </Transition>
       {!transitionVisible && currentScene && (
         <SceneRenderer
           key={currentScene.id}

@@ -36,3 +36,10 @@ export interface SaveData {
   scene: string
   dialogueIndex: number
 }
+
+export type CharacterPosition = "left" | "center" | "right";
+
+export interface CharacterScene {
+  character: string;
+  position: CharacterPosition;
+}
