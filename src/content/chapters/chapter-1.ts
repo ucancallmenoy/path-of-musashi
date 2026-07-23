@@ -23,7 +23,7 @@ export const chapter1: Chapter = {
       bgm: "/assets/bg-music/morning.mp3",
       characters: [
         {
-          character: "miyamoto/neutral",
+          character: "miyamoto/no-sword",
           position: "center",
         },
       ],
@@ -50,7 +50,7 @@ export const chapter1: Chapter = {
         },
         {
           speaker: "",
-          text: "Miyamoto lay still, listening to the silence between sounds.",
+          text: "Takezō lay still, listening to the silence between sounds.",
         },
         {
           speaker: "",
@@ -163,11 +163,11 @@ export const chapter1: Chapter = {
       bgm: "/assets/bg-music/village.mp3",
       characters: [
         {
-          character: "miyamoto/neutral",
+          character: "miyamoto/no-sword",
           position: "left",
         },
         {
-          character: "matahachi/neutral",
+          character: "matahachi/no-sword",
           position: "right",
         },
       ],
@@ -181,7 +181,7 @@ export const chapter1: Chapter = {
           text: "I have been looking everywhere. My mother sent me to find you twice.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I was training.",
         },
         {
@@ -189,7 +189,7 @@ export const chapter1: Chapter = {
           text: "Training. Always training. Do you ever get tired?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -205,7 +205,7 @@ export const chapter1: Chapter = {
           text: "He said there is movement. Troops gathering. Samurai from every province.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Movement where?",
         },
         {
@@ -217,7 +217,7 @@ export const chapter1: Chapter = {
           text: "This could be our chance, Takezō.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Chance for what?",
         },
         {
@@ -225,7 +225,7 @@ export const chapter1: Chapter = {
           text: "To leave this village. To become something more than farmers' sons.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "The sword is not a tool for becoming something.",
         },
         {
@@ -233,7 +233,7 @@ export const chapter1: Chapter = {
           text: "You sound like the old master.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Perhaps he is right.",
         },
         {
@@ -241,7 +241,7 @@ export const chapter1: Chapter = {
           text: "You have been spending too much time at the dojo.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -261,7 +261,7 @@ export const chapter1: Chapter = {
           text: "You never answered my question, you know.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Which one?",
         },
         {
@@ -269,7 +269,7 @@ export const chapter1: Chapter = {
           text: "Do you ever get tired?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Every day.",
         },
         {
@@ -277,7 +277,7 @@ export const chapter1: Chapter = {
           text: "Then why do you keep going?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Because stopping is worse.",
         },
         {
@@ -297,7 +297,7 @@ export const chapter1: Chapter = {
           position: "center",
         },
         {
-          character: "matahachi/neutral",
+          character: "matahachi/no-sword",
           position: "left",
         },
         {
@@ -331,7 +331,7 @@ export const chapter1: Chapter = {
           text: "You. You fill his head with dreams of glory. Of swords and battles. You think that makes you a man?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -355,7 +355,7 @@ export const chapter1: Chapter = {
           text: "You are a bad influence. You always have been.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -363,7 +363,7 @@ export const chapter1: Chapter = {
           text: "Say something. Defend yourself.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "There is nothing to defend.",
         },
         {
@@ -383,7 +383,7 @@ export const chapter1: Chapter = {
           text: "...I am sorry about her.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "She is not wrong.",
         },
       ],
@@ -405,7 +405,7 @@ export const chapter1: Chapter = {
           position: "left",
         },
         {
-          character: "miyamoto/neutral",
+          character: "miyamoto/no-sword",
           position: "right",
         },
       ],
@@ -415,7 +415,7 @@ export const chapter1: Chapter = {
           text: "You have been avoiding me.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -423,7 +423,7 @@ export const chapter1: Chapter = {
           text: "Three days. You have not come to the shrine.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I have been occupied.",
         },
         {
@@ -431,7 +431,7 @@ export const chapter1: Chapter = {
           text: "With the sword.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Yes.",
         },
         {
@@ -443,7 +443,7 @@ export const chapter1: Chapter = {
           text: "Do you remember — when we were children — you promised me something.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I remember.",
         },
         {
@@ -451,7 +451,7 @@ export const chapter1: Chapter = {
           text: "You said you would always protect this village.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I said I would always protect you.",
         },
         {
@@ -463,7 +463,7 @@ export const chapter1: Chapter = {
           text: "The wind moved between them. Cherry petals fell onto the stone path.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "There is something I must find.",
         },
         {
@@ -471,7 +471,7 @@ export const chapter1: Chapter = {
           text: "What?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I do not know yet.",
         },
         {
@@ -487,7 +487,7 @@ export const chapter1: Chapter = {
           text: "It is an omamori. From the shrine. For protection.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Otsū...",
         },
         {
@@ -601,7 +601,7 @@ export const chapter1: Chapter = {
           text: "Your swings are sharper today.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I have been practicing.",
         },
         {
@@ -609,7 +609,7 @@ export const chapter1: Chapter = {
           text: "I know. The whole village knows. You wake before the birds.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -625,7 +625,7 @@ export const chapter1: Chapter = {
           text: "You are restless. I see it in your shoulders. In the way you hold the sword.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I do not understand what I feel.",
         },
         {
@@ -633,7 +633,7 @@ export const chapter1: Chapter = {
           text: "That is the first truth you must accept. The sword does not answer questions. It only reveals the one who holds it.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Then what am I supposed to do?",
         },
         {
@@ -653,7 +653,7 @@ export const chapter1: Chapter = {
           text: "He left when the call came. I never saw him again.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -669,7 +669,7 @@ export const chapter1: Chapter = {
           text: "A man who lives by the sword alone will die by it.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Then what should I live by?",
         },
         {
@@ -681,7 +681,7 @@ export const chapter1: Chapter = {
           text: "But I will tell you this — do not confuse strength with purpose.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -697,7 +697,7 @@ export const chapter1: Chapter = {
           text: "Takezō.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -705,7 +705,7 @@ export const chapter1: Chapter = {
           text: "The road you choose... make sure it is yours.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -743,7 +743,7 @@ export const chapter1: Chapter = {
           text: "You again. Come to stare at the fire?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I came to ask about the blade.",
         },
         {
@@ -751,7 +751,7 @@ export const chapter1: Chapter = {
           text: "Still swinging that wooden stick?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "It is all I have.",
         },
         {
@@ -771,7 +771,7 @@ export const chapter1: Chapter = {
           text: "You are like this steel, boy. Still being shaped.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "When will I be ready for a real sword?",
         },
         {
@@ -787,7 +787,7 @@ export const chapter1: Chapter = {
           text: "A blade is not a tool for killing. It is a mirror. It shows you who you truly are.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -821,7 +821,7 @@ export const chapter1: Chapter = {
           text: "You there, young man. You look like you could use some news.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "What news?",
         },
         {
@@ -837,7 +837,7 @@ export const chapter1: Chapter = {
           text: "Tokugawa Ieyasu has declared against Ishida Mitsunari. The country is splitting in two.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -845,7 +845,7 @@ export const chapter1: Chapter = {
           text: "Every lord is choosing sides. Families are turning against each other. It will be the greatest battle this land has seen in a generation.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Where?",
         },
         {
@@ -861,7 +861,7 @@ export const chapter1: Chapter = {
           text: "Mark my words, boy. That battle will decide the future of Japan. Everything will change after it.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "And the young men who go there?",
         },
         {
@@ -895,7 +895,7 @@ export const chapter1: Chapter = {
           position: "left",
         },
         {
-          character: "miyamoto/neutral",
+          character: "miyamoto/no-sword",
           position: "right",
         },
       ],
@@ -905,7 +905,7 @@ export const chapter1: Chapter = {
           text: "Ah, Takezō. Come. Sit with me.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -917,7 +917,7 @@ export const chapter1: Chapter = {
           text: "An old man knows when a young man has something on his mind.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I am thinking about the road.",
         },
         {
@@ -925,7 +925,7 @@ export const chapter1: Chapter = {
           text: "The road?",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Beyond the village. Beyond these mountains.",
         },
         {
@@ -933,7 +933,7 @@ export const chapter1: Chapter = {
           text: "I see. So the rumors have reached you as well.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Matahachi spoke of soldiers gathering in the north.",
         },
         {
@@ -953,7 +953,7 @@ export const chapter1: Chapter = {
           text: "It takes their youth. Their innocence. Sometimes their lives before they have truly lived.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Is it wrong to want to see the world?",
         },
         {
@@ -961,7 +961,7 @@ export const chapter1: Chapter = {
           text: "No. But see it with your eyes open. Do not let others decide what you fight for.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "And if I do not know what I fight for?",
         },
         {
@@ -1065,7 +1065,7 @@ export const chapter1: Chapter = {
       bgm: "/assets/bg-music/departure.mp3",
       characters: [
         {
-          character: "matahachi/neutral",
+          character: "matahachi/no-sword",
           position: "left",
         },
         {
@@ -1083,7 +1083,7 @@ export const chapter1: Chapter = {
           text: "So... this is it.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -1091,7 +1091,7 @@ export const chapter1: Chapter = {
           text: "My mother cried when I told her. Said I would come back with my bones broken.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "You do not have to come.",
         },
         {
@@ -1115,7 +1115,7 @@ export const chapter1: Chapter = {
           text: "I meant what I said. At the shrine.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I know.",
         },
         {
@@ -1123,7 +1123,7 @@ export const chapter1: Chapter = {
           text: "Then come back.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
@@ -1131,7 +1131,7 @@ export const chapter1: Chapter = {
           text: "Promise me.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I cannot promise what I cannot control.",
         },
         {
@@ -1143,7 +1143,7 @@ export const chapter1: Chapter = {
           text: "A long pause. The wind stirred the grass. A hawk cried somewhere above.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "I will try.",
         },
         {
@@ -1152,10 +1152,10 @@ export const chapter1: Chapter = {
         },
         {
           speaker: "",
-          text: "Miyamoto turned. He looked at Otsū one last time.",
+          text: "Takezō turned. He looked at Otsū one last time.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "Goodbye.",
         },
         {
@@ -1187,7 +1187,7 @@ export const chapter1: Chapter = {
           position: "left",
         },
         {
-          character: "matahachi/neutral",
+          character: "matahachi/no-sword",
           position: "center",
         },
         {
@@ -1249,7 +1249,7 @@ export const chapter1: Chapter = {
           text: "You. Watch over him. Or I will find you.",
         },
         {
-          speaker: "Miyamoto",
+          speaker: "Takezō",
           text: "...",
         },
         {
